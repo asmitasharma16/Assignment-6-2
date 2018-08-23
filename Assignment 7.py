@@ -1,4 +1,4 @@
-Q.1- Create a user defined dictionary and get keys corresponding to the value using for loop.
+#Q.1- Create a user defined dictionary and get keys corresponding to the value using for loop.
 r =int(input("Enter range of dictionary "))
 k=[ ]
 v=[ ]
