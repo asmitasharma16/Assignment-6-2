@@ -1,16 +1,20 @@
 #Q.1- Create a user defined dictionary and get keys corresponding to the value using for loop.
-r =int(input("Enter range of dictionary "))
-k=[ ]
-v=[ ]
-dict ={}
-for i in range (r):
-    a=input('enter keys ')
-    k.append(a)
-    a=input('enter values ')
-    v.append(a)
-for i in range (r):
-    dict[k[i]]= v[i]    
-print(dict)
+a=eval(input("enter dictionary"))
+b=input("enter value")
+flag=0
+for k,v in a.items():
+    if b==v:
+        flag=1
+        break
+    else:
+        flag=0
+
+if(flag==0):
+    print('No key found')
+else:
+    print(k)
+
+
 
 #Q.2- Create a dictionary and store student names and create nested dictionary to store the subject wise marks of every student.
 #Print the marks of a given student from that dictionary for every subject. 
@@ -23,3 +27,5 @@ for k,v in student.items():
         print('sub 2:',student[k]['sub2'])
         print('sub 3:',student[k]['sub3'])
     
+    
+
